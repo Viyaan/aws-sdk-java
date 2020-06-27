@@ -1,0 +1,17 @@
+{
+  "Description": "A simple Lambda function \"Resizing image\".",
+  "Resources": {
+    "ResizeImage": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "com.serverless.javasdk.function.S3ImageResizeHandler",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/javasdk-1.0.0.jar",
+         "Policies": [
+          "AmazonS3FullAccess",
+          "AmazonSESFullAccess"
+        ]
+      }
+    }
+  }
+}

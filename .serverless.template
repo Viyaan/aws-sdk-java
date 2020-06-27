@@ -1,0 +1,20 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Transform" : [ "AWS::Serverless-2016-10-31" ],
+  "Description" : "A simple Lambda function saying \"Hello World\".",
+  "Resources" : {
+    "HelloWorld" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties" : {
+        "Role" : null,
+        "MemorySize" : 512,
+        "Runtime" : "java8",
+        "Description" : null,
+        "Policies" : [ ],
+        "CodeUri" : "./target/javasdk-1.0.0.jar",
+        "Timeout" : 300,
+        "Handler" : "com.serverless.javasdk.function.Handler"
+      }
+    }
+  }
+}
