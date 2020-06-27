@@ -52,8 +52,8 @@ public class S3ImageResizeHandler implements RequestHandler<S3Event, String> {
 	private final String JPG_MIME = (String) "image/jpeg";
 	private final String PNG_TYPE = (String) "png";
 	private final String PNG_MIME = (String) "image/png";
-	private static final String FROM = "viyaan.86@gmail.com";
-	private static final String TO = "viyaan.86@gmail.com";
+	private static final String FROM = "awsgeeky@gmail.com";
+	private static final String TO = "awsgeeky@gmail.com";
 	private static  String SUBJECT = "New Image Uploaded";
 
 	// The email body for recipients with non-HTML email clients.
